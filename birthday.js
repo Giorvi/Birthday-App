@@ -7,6 +7,6 @@ button.addEventListener('click' () => {
                 return age;
             }
 
-        }
+        function getSign(){
 
-        function Dispa
+}
