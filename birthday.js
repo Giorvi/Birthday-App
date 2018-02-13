@@ -5,7 +5,7 @@ button.addEventListener('click' () => {
 
             function getSign() {
                 var sign = new Date(birthday),
-                    birthday = document.getElementById("birthdayinout").value;
+                    birthday = document.getElementById("birthdayinput").value;
                 if ((sign.getMonth() == 2 && sign.getDate() >= 21 || sign.getMonth() == 3 && sign.getDate() <= 19)) {
                     return "Aries";
 
