@@ -1,4 +1,31 @@
+<<<<<<< HEAD
+var button = document.getElementById('Submit');
+var button1 = document.getElementById('findAge');
+button1.addEventListener('click', () => {};
+
+    function getAge() {
+        var inputDate = document.getElementById('inputDate');
+        var year = now.getFullYear();
+        var birthYear = dateOfBirth.getFullYear
+        var age = year.getFullYear() - birthYear.getFullYear();
+        return "You are" + age + "years old";
+    }
+
+    function returnAge() {
+        var input = document.getElementById('inputDate').value;
+        var result = getAge(inputDate);
+
+    }
+    return age;
+}
+
+
+
+
+var button1 = document.getElementById('Submit');
+=======
   var button = document.getElementById('Submit');
+>>>>>>> origin/master
 button.addEventListener('click' () => {
 
 
