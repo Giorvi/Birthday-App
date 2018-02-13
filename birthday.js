@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var button = document.getElementById('Submit');
 var button1 = document.getElementById('findAge');
 button1.addEventListener('click', () => {};
@@ -22,6 +23,9 @@ button1.addEventListener('click', () => {};
 
 
 var button1 = document.getElementById('Submit');
+=======
+  var button = document.getElementById('Submit');
+>>>>>>> origin/master
 button.addEventListener('click' () => {
 
 
