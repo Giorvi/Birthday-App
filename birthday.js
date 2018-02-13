@@ -5,11 +5,11 @@ button.addEventListener('click' () => {
 
             function getSign() {
                 var sign = new Date(birthday),
-                birthday = document.getElementById("birthdayinout").value;
-                    if ((sign.getMonth() == 2 && sign.getDate() >= 21 || sign.getMonth() == 3 && sign.getDate() <= 19)) {
-                        return "Aries";
+                    birthday = document.getElementById("birthdayinout").value;
+                if ((sign.getMonth() == 2 && sign.getDate() >= 21 || sign.getMonth() == 3 && sign.getDate() <= 19)) {
+                    return "Aries";
 
-                    } else
+                } else
                 if ((sign.getMonth() == 3 && sign.getDate() >= 20 || sign.getMonth() == 4 && sign.getDate() <= 20)) {
                     return "Taurus";
 
@@ -47,17 +47,16 @@ button.addEventListener('click' () => {
 
                 }
             }
-    function birthdayCountDown(date) {
-    var today = new Date();
-    var myBirthday = new Date(date);
-    myBirthday.setFullYear(today.getFullYear());
-    if (today.getTime() > myBirthday.getTime()) {
-        myBirthday.setFullYear(today.getFullYear() + 1);
-    }
-    var diff = myBirthday.getTime() - today.getTime();
-    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-    return ("My Birthday is in " + days+ " days :(");
-}
+            function birthdayCountDown(date) {
+                var today = new Date();
+                var myBirthday = new Date(date);
+                myBirthday.setFullYear(today.getFullYear());
+                if (today.getTime() > myBirthday.getTime()) {
+                    myBirthday.setFullYear(today.getFullYear() + 1);
+                }
+                var diff = myBirthday.getTime() - today.getTime();
+                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-
+                return ("My Birthday is in " + days + " days :(");
+            }
