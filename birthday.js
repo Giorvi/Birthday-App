@@ -104,11 +104,12 @@ function birthdayCountDown(date) {
        var year= year;
 
     if (ExpiryDate.length !== 10) {
-        return false;
+        return "Sorry, but you did not enter a date in the correct format.";
+
     }
 
     if (ExpiryDate.substring(2, 3) !== '/' || ExpiryDate.substring(5, 6) !== '/') {
-        return false;
+        return "Sorry, but you did not enter a date in the correct format.";
     }
 
     month = ExpiryDate.substring(0, 2) - 1;
@@ -116,7 +117,7 @@ function birthdayCountDown(date) {
     year = ExpiryDate.substring(6, 10) - 0;
 
     if (year < 1000 || year > 3000) {
-        return false;
+        return "Sorry, but you did not enter a date in the correct format.";
     }
 
     mSeconds = (new Date(year, month, day)).getTime();
@@ -127,7 +128,7 @@ function birthdayCountDown(date) {
     if (objDate.getFullYear() !== year ||
         objDate.getMonth() !== month ||
         objDate.getDate() !== day) {
-        return false;
+        return "Sorry, but you did not enter a date in the correct format.";
     }
     return true;
 
