@@ -1,26 +1,17 @@
-var button1 = document.getElementById('findAge');
-button1.addEventListener('click', () => {
-    document.getElementById.textContent('output')
+var button = document.getElementById("submitbirthday");
+button.addEventListener("click", () => {
+    document.getElementById('output').textContent = getAge()
+
 });
 
 function getAge() {
-    var inputDate = document.getElementById('inputDate');
-    var year = now.getFullYear();
-    var birthYear = dateOfBirth.getFullYear
-    var age = year.getFullYear() - birthYear.getFullYear();
-    return "You are" + age + "years old";
+    var today = new Date(),
+        birthday = document.getElementById("birthdayinput").value,
+        birthdate = new Date(birthday),
+        age = Math.floor((today - birthdate) / (365 * 24 * 60 * 60 * 1000));
+
+    return "You're are" + age + "years old";
 }
-
-function returnAge() {
-    var input = document.getElementById('inputDate').value;
-    var result = getAge(inputDate);
-
-}
-return age;
-}
-
-
-
 
 
 
