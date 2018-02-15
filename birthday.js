@@ -1,4 +1,4 @@
-  var button = document.getElementById('Submit');
+var button = document.getElementById('Submit');
 button.addEventListener('click' () => {
 
 
@@ -59,4 +59,46 @@ button.addEventListener('click' () => {
                 var days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
                 return ("My Birthday is in " + days + " days :(");
+
             }
+
+
+
+
+
+
+
+        function checkFormat(ExpiryDate) {
+    var objDate= objDate;
+      var   mSecond = mSeconds;
+       var day= day;
+       var  month= month;
+       var year= year;
+
+    if (ExpiryDate.length !== 10) {
+        return false;
+    }
+
+    if (ExpiryDate.substring(2, 3) !== '/' || ExpiryDate.substring(5, 6) !== '/') {
+        return false;
+    }
+
+    month = ExpiryDate.substring(0, 2) - 1;
+    day = ExpiryDate.substring(3, 5) - 0;
+    year = ExpiryDate.substring(6, 10) - 0;
+
+    if (year < 1000 || year > 3000) {
+        return false;
+    }
+
+    mSeconds = (new Date(year, month, day)).getTime();
+
+    objDate = new Date();
+    objDate.setTime(mSeconds);
+
+    if (objDate.getFullYear() !== year ||
+        objDate.getMonth() !== month ||
+        objDate.getDate() !== day) {
+        return false;
+    }
+    return true;
