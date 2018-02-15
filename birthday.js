@@ -28,12 +28,11 @@ return age;
 
 
 
-
-function getSign() {
-    var sign = new Date(birthday),
-        birthday = document.getElementById("birthdayinout").value;
-    if ((sign.getMonth() == 2 && sign.getDate() >= 21 || sign.getMonth() == 3 && sign.getDate() <= 19)) {
-        return "Aries";
+            function getSign() {
+                var sign = new Date(birthday),
+                    birthday = document.getElementById("birthdayinput").value;
+                if ((sign.getMonth() == 2 && sign.getDate() >= 21 || sign.getMonth() == 3 && sign.getDate() <= 19)) {
+                    return "Aries";
 
     } else
     if ((sign.getMonth() == 3 && sign.getDate() >= 20 || sign.getMonth() == 4 && sign.getDate() <= 20)) {
