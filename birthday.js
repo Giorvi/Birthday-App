@@ -1,3 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <<<<<<< HEAD
 var button = document.getElementById('Submit');
 var button1 = document.getElementById('findAge');
