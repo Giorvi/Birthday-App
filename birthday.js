@@ -64,10 +64,31 @@ return age;
     } else if ((sign.getMonth() == 0 && sign.getDate() >= 20 || sign.getMonth() == 1 && sign.getDate() <= 18)) {
         return "Aquarius";
 
-<<<<<<< HEAD
+
                 return ("My Birthday is in " + days + " days :(");
 
             }
+
+    } else if ((sign.getMonth() == 1 && sign.getDate() >= 19 || sign.getMonth() == 2 && sign.getDate() <= 20)) {
+        return "Pisces";
+
+
+
+    }
+}
+
+function birthdayCountDown(date) {
+    var today = new Date();
+    var myBirthday = new Date(date);
+    myBirthday.setFullYear(today.getFullYear());
+    if (today.getTime() > myBirthday.getTime()) {
+        myBirthday.setFullYear(today.getFullYear() + 1);
+    }
+    var diff = myBirthday.getTime() - today.getTime();
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+    return ("My Birthday is in " + days + " days :(");
+}
 
 
 
@@ -109,26 +130,5 @@ return age;
         return false;
     }
     return true;
-=======
-
-    } else if ((sign.getMonth() == 1 && sign.getDate() >= 19 || sign.getMonth() == 2 && sign.getDate() <= 20)) {
-        return "Pisces";
 
 
-
-    }
-}
-
-function birthdayCountDown(date) {
-    var today = new Date();
-    var myBirthday = new Date(date);
-    myBirthday.setFullYear(today.getFullYear());
-    if (today.getTime() > myBirthday.getTime()) {
-        myBirthday.setFullYear(today.getFullYear() + 1);
-    }
-    var diff = myBirthday.getTime() - today.getTime();
-    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-
-    return ("My Birthday is in " + days + " days :(");
-}
->>>>>>> origin/master
