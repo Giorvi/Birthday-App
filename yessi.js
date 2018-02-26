@@ -8,9 +8,9 @@ button.addEventListener("click", () => {
 function birthdayCountDown() {
     var today = new Date,
         Nextyear = today.getYear() + 1,
-        Birthday = document.getElementById(“birthdayinput”).value,
+        Birthday = document.getElementById(("birthdayinput").value,
         Birthdate = new Date(birthday),
-        Nextbirthday = new Date(birthdate.setFullYear(today.getFullYear()));
+        Nextbirthday = new Date(birthdate.setFullYear(today.getFullYear())));
 }
 var daysuntilnextbirthday = Math.ceil((nextbirthday - today) / (1000 * 60 * 60 * 24));
 
