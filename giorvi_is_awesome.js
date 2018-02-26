@@ -14,4 +14,4 @@ function getAge() {
 
 
 }
-function checkFormat()
+
