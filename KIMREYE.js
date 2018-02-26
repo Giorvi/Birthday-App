@@ -1,38 +1,42 @@
+function getSign() {
+var today = new Date,
+birthday = document.getElementById("birthdayinput").value,
+birthdate = new Date(birthday),
+days = birthdate.getDate(),
+month = birthdate.getMonth();
 
-        function checkFormat(ExpiryDate) {
-    var objDate= objDate;
-      var   mSecond = mSeconds;
-       var day= day;
-       var  month= month;
-       var year= year;
+if ((month == 2 && days >= 21 || month == 3 && days <= 19)) {
+    return "Aries";
+} else if ((month == 3 && days >= 20 || month == 4 && days <= 20)) {
+return "Taurus";
 
-    if (ExpiryDate.length !== 10) {
-        return "Sorry, but you did not enter a date in the correct format.";
+} else if ((month == 4 && days >= 21 || month == 5 && days <= 20)) {
+    return "Gemini";
 
-    }
+} else if ((month == 5 && days >= 21 || month == 6 && days <= 22)) {
+   return "Cancer";
 
-    if (ExpiryDate.substring(2, 3) !== '/' || ExpiryDate.substring(5, 6) !== '/') {
-        return "Sorry, but you did not enter a date in the correct format.";
-    }
+} else if ((month == 6 && days >= 23 || month == 7 && days <= 22)) {
+    return "Leo";
 
-    month = ExpiryDate.substring(0, 2) - 1;
-    day = ExpiryDate.substring(3, 5) - 0;
-    year = ExpiryDate.substring(6, 10) - 0;
+} else if ((month == 7 && days >= 23 || month == 8 && days <= 22)) {
+   return "Virgo";
+} else if ((month == 8 && days >= 23 || month == 9 && days <= 22)) {
+return "Libra";
 
-    if (year < 1000 || year > 3000) {
-        return "Sorry, but you did not enter a date in the correct format.";
-    }
+} else if ((month == 9 && days >= 23 || month == 10 && days <= 21)) {
+    return "Scorpio";
+} else if ((month == 10 && days >= 22 || month == 11 && days <= 21)) {
+    return "Sagittarius";
 
-    mSeconds = (new Date(year, month, day)).getTime();
+} else if ((month == 11 && days >= 22 || month == 0 && days <= 19)) {
+    return "Capricorn";
 
-    objDate = new Date();
-    objDate.setTime(mSeconds);
+} else if ((month == 0 && days >= 20 || month == 1 && days <= 18)) {
+    return "Aquarius";
 
-    if (objDate.getFullYear() !== year ||
-        objDate.getMonth() !== month ||
-        objDate.getDate() !== day) {
-        return "Sorry, but you did not enter a date in the correct format.";
-    }
-    return true;
-        }
 
+} else if ((month == 1 && days >= 19 || month == 2 && days <= 20)) {
+    return "Pisces";
+
+}
