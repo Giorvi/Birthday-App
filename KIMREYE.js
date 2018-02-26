@@ -5,6 +5,7 @@ birthdate = new Date(birthday),
 days = birthdate.getDate(),
 month = birthdate.getMonth();
 
+
 if ((month == 2 && days >= 21 || month == 3 && days <= 19)) {
     return "Aries";
 } else if ((month == 3 && days >= 20 || month == 4 && days <= 20)) {

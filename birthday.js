@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 var button = document.getElementById('Submit');
 button.addEventListener('click' () => {
 =======
@@ -97,3 +98,5 @@ function birthdayCountDown(date) {
 
 
 
+=======
+>>>>>>> origin/master
