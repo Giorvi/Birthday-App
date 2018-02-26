@@ -7,12 +7,12 @@
        var year= year;
 
     if (ExpiryDate.length !== 10) {
-        return "Sorry, but you did not enter a date in the correct format.";
+        return "Sorry, but you did not enter a date in the correct format of mm/dd.yyyy.";
 
     }
 
     if (ExpiryDate.substring(2, 3) !== '/' || ExpiryDate.substring(5, 6) !== '/') {
-        return "Sorry, but you did not enter a date in the correct format.";
+        return "Sorry, but you did not enter a date in the correct format of mm/dd/yyyy.";
     }
 
     month = ExpiryDate.substring(0, 2) - 1;
