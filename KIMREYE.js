@@ -1,6 +1,6 @@
 function getSign() {
 var today = new Date,
-birthday = document.getElementById("birthdayinput").value,
+birthday = document.getElementById("birthday").value;
 birthdate = new Date(birthday),
 days = birthdate.getDate(),
 month = birthdate.getMonth();
