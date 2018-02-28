@@ -1,9 +1,9 @@
 function getSign() {
-var today = new Date,
-birthday = document.getElementById("birthday").value;
-birthdate = new Date(birthday),
-days = birthdate.getDate(),
-month = birthdate.getMonth();
+var today = new Date;
+var birthday = document.getElementById("birthdayinput").value;
+var birthdate = new Date(birthday);
+var days = birthdate.getDate();
+var month = birthdate.getMonth();
 
 
 if ((month == 2 && days >= 21 || month == 3 && days <= 19)) {
@@ -11,18 +11,10 @@ if ((month == 2 && days >= 21 || month == 3 && days <= 19)) {
 } else if ((month == 3 && days >= 20 || month == 4 && days <= 20)) {
 return "Taurus";
 
-    if (ExpiryDate.length !== 10) {
-        return "Sorry, but you did not enter a date in the correct format of mm/dd.yyyy.";
-
 } else if ((month == 4 && days >= 21 || month == 5 && days <= 20)) {
     return "Gemini";
 } else if ((month == 5 && days >= 21 || month == 6 && days <= 22)) {
    return "Cancer";
-
-    if (ExpiryDate.substring(2, 3) !== '/' || ExpiryDate.substring(5, 6) !== '/') {
-        return "Sorry, but you did not enter a date in the correct format of mm/dd/yyyy.";
-    }
-
 
 } else if ((month == 6 && days >= 23 || month == 7 && days <= 22)) {
     return "Leo";
@@ -48,3 +40,5 @@ return "Libra";
     return "Pisces";
 
 }
+}
+
