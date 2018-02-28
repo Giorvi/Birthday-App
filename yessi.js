@@ -6,11 +6,15 @@ button.addEventListener("click", () => {
 
 function birthdayCountDown() {
     var today = new Date,
-        Nextyear = today.getYear() + 1,
-        birthday = document.getElementById(("birthdayinput")).value,
+        nextyear = today.getYear() + 1,
+        birthday = document.getElementById("birthdayinput").value,
         birthdate = new Date(birthday),
         nextBirthday = new Date(birthdate.setFullYear(today.getFullYear()));
-var daysuntilnextbirthday = Math.ceil((nextBirthday - today) / (24 * 60 * 60 * 1000));
+    if (today - nextBirthday > 0){
+        var nextBirthday = nextBirthday.setFullYear(today.getFullYear()+ 1)
+
+    }
+var daysuntilnextbirthday = Math.ceil((nextBirthday - today) / (1000 * 60 * 60 * 24))
 
 return daysuntilnextbirthday;
 }
