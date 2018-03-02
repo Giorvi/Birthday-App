@@ -13,7 +13,7 @@ return "Taurus";
 
 } else if ((month == 4 && days >= 21 || month == 5 && days <= 20)) {
     return "Gemini";
-} else if ((month == 5 && days >= 21 || month == 6 && days <= 22)) {
+} else if ((month == 5 && days >= 21 || month n == 6 && days <= 22)) {
    return "Cancer";
 
 } else if ((month == 6 && days >= 23 || month == 7 && days <= 22)) {
