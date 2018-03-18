@@ -14,7 +14,7 @@ function getAge() {
 }
 
 // getAge function.
-// Takes Birtdate input and returns how old the prson is based on the input.
+// Takes Birthdate input and returns how old the person is based on the input.
 function birthdayCountDown() {
     var today = new Date,
         nextyear = today.getYear() + 1,
@@ -31,7 +31,7 @@ function birthdayCountDown() {
 }
 
 // birthdayCountDown funtion.
-// based on the input by the user return a count down untill their next birthday.
+// Based on the input by the user return a countdown until their next birthday.
 function getSign(birthday) {
     var day = birthday.getDate();
     var month = birthday.getMonth() + 1;
@@ -65,10 +65,10 @@ function getSign(birthday) {
     return msg;
 }
 
-// checkFomat function
-/*this funtion makes sure that the inout from the user is in the correct date format.
-The funtion checks for certain permaiter and then returns on of the two things. It can return getAge,
-birthdayCountDown, and get sign or you didn't enter the correct format*/
+// checkFormat function
+/*This function makes sure that the input from the user is in the correct date format.
+The function checks for certain permits and then returns one of the two things. It can return getAge,
+birthdayCountDown, and getSign or you didn't enter the correct format*/
 function checkFormat() {
     var format = document.getElementById("Birthday").value;
     var check1 = format.substring(2, 3);
